@@ -1,1 +1,7 @@
-//Entry point for SWENG 861 CRUD project
+const { createServer } = require('../src/health');
+
+const PORT = 3000;
+
+createServer().listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
